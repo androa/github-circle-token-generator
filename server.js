@@ -23,7 +23,6 @@ const token = (req, res) => {
   return token;
 };
 
-app.get("/", (req, res) => res.send("Hello World!"));
 app.get("/test-token", (req, res) => {
   const tokens = token();
 
