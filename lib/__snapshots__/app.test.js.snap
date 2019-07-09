@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`request fails if project is missing 1`] = `
+exports[`GET /token/inject adds token to environment of CircleCI project 1`] = `"Successfully created token (ending with xxxFOO) and injected it to CircleCI build (test/test)"`;
+
+exports[`GET /token/inject fails if project is missing 1`] = `
 Object {
   "errors": Array [
     Object {
@@ -12,7 +14,7 @@ Object {
 }
 `;
 
-exports[`request fails if username and project is missing 1`] = `
+exports[`GET /token/inject fails if username and project is missing 1`] = `
 Object {
   "errors": Array [
     Object {
@@ -29,7 +31,7 @@ Object {
 }
 `;
 
-exports[`request fails if username is missing 1`] = `
+exports[`GET /token/inject fails if username is missing 1`] = `
 Object {
   "errors": Array [
     Object {
@@ -41,4 +43,4 @@ Object {
 }
 `;
 
-exports[`token gets added to environment of project 1`] = `"Successfully created token (ending with xxxFOO) and injected it to CircleCI build (test/test)"`;
+exports[`GET /token/verify tests the token generation against the GitHub API 1`] = `"{\\"response\\":\\"Got reply from github\\"}"`;
