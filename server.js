@@ -56,7 +56,7 @@ app.get("/inject-token", (req, res) => {
     }
   };
 
-  console.log(`Installing token for ${username}/${project}`);
+  console.log(`Installing token for ${request.username}/${request.project}`);
 
   ci.setEnvVar(request)
     .then(f => {
