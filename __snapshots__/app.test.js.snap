@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`request fails if project is missing 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "location": "query",
+      "msg": "Project identifier is required",
+      "param": "project",
+    },
+  ],
+}
+`;
+
+exports[`request fails if username and project is missing 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "location": "query",
+      "msg": "Username is required",
+      "param": "username",
+    },
+    Object {
+      "location": "query",
+      "msg": "Project identifier is required",
+      "param": "project",
+    },
+  ],
+}
+`;
+
+exports[`request fails if username is missing 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "location": "query",
+      "msg": "Username is required",
+      "param": "username",
+    },
+  ],
+}
+`;
+
+exports[`token gets added to environment of project 1`] = `"Successfully created token (ending with xxxFOO) and injected it to CircleCI build (test/test)"`;
