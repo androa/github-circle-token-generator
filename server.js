@@ -26,7 +26,6 @@ const token = (req, res) => {
 }
 
 app.get('/', (req, res) => res.send('Hello World!'))
-app.get('/token', (req, res) => res.send(token()))
 app.get('/test-token', (req, res) => {
   const tokens = token()
 
