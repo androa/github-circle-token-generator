@@ -43,4 +43,4 @@ Object {
 }
 `;
 
-exports[`GET /token/verify tests the token generation against the GitHub API 1`] = `"{\\"response\\":\\"Got reply from github\\"}"`;
+exports[`GET /token/verify tests the token generation against the GitHub API 1`] = `"Successfully created token (ending with xxxxOvNI) and verified it against the GitHub API."`;
