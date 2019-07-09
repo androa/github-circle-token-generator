@@ -16,7 +16,7 @@ const ci = new CircleCi({
 const token = (req, res) => {
   var token = jwt.sign({}, privateKey, {
     algorithm: "RS256",
-    expiresIn: "10m",
+    expiresIn: "3m",
     issuer: APP_ID
   });
 
