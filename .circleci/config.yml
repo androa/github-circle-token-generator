@@ -42,6 +42,7 @@ jobs:
             mv coverage/clover.xml test-results/jest/results.xml
             ls test-results
             ls test-results/jest
+            cat test-results/jest/results.xml
       - store_test_results:
           path: test-results
 
