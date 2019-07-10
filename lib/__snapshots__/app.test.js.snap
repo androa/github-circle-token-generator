@@ -2,6 +2,35 @@
 
 exports[`GET /token/inject adds token to environment of CircleCI project 1`] = `"Successfully created token (ending with xxxFOO) and injected it to CircleCI build (test/test)"`;
 
+exports[`GET /token/inject fails if owner and project is missing 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "location": "query",
+      "msg": "Owner is required",
+      "param": "owner",
+    },
+    Object {
+      "location": "query",
+      "msg": "Project identifier is required",
+      "param": "project",
+    },
+  ],
+}
+`;
+
+exports[`GET /token/inject fails if owner is missing 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "location": "query",
+      "msg": "Owner is required",
+      "param": "owner",
+    },
+  ],
+}
+`;
+
 exports[`GET /token/inject fails if project is missing 1`] = `
 Object {
   "errors": Array [
@@ -13,34 +42,3 @@ Object {
   ],
 }
 `;
-
-exports[`GET /token/inject fails if username and project is missing 1`] = `
-Object {
-  "errors": Array [
-    Object {
-      "location": "query",
-      "msg": "Username is required",
-      "param": "username",
-    },
-    Object {
-      "location": "query",
-      "msg": "Project identifier is required",
-      "param": "project",
-    },
-  ],
-}
-`;
-
-exports[`GET /token/inject fails if username is missing 1`] = `
-Object {
-  "errors": Array [
-    Object {
-      "location": "query",
-      "msg": "Username is required",
-      "param": "username",
-    },
-  ],
-}
-`;
-
-exports[`GET /token/verify tests the token generation against the GitHub API 1`] = `"Successfully created token (ending with xxxxOvNI) and verified it against the GitHub API."`;
