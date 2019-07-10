@@ -31,8 +31,15 @@ jobs:
           name: Run tests
           command: |
             ./cc-test-reporter before-build
-            npm run test -- --collectCoverage --coverageReporters lcov html
+            npm run test -- --collectCoverage --coverageReporters lcov html clover
             ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
       - store_artifacts:
           path: coverage
+      - run:
+          name: Prepare coverage for circle
+          command: |
+            mkdir -p test-results/jest
+            mv coverage/clover.xml test-results/jest/results.xml
+      - store_test_results:
+          path: test-results/
 
