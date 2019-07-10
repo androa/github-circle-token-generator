@@ -40,6 +40,8 @@ jobs:
           command: |
             mkdir -p test-results/jest
             mv coverage/clover.xml test-results/jest/results.xml
+            ls test-results
+            ls test-results/jest
       - store_test_results:
-          path: test-results/
+          path: test-results
 
