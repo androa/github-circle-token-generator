@@ -1,5 +1,7 @@
 # github-circle-token-generator
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/e43665d4c4082e017a2d/maintainability)](https://codeclimate.com/github/androa/github-circle-token-generator/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e43665d4c4082e017a2d/test_coverage)](https://codeclimate.com/github/androa/github-circle-token-generator/test_coverage)
+
 A very simple application for generating an GitHub App Installation Token and injects into the desired CircleCI project.
 
 It requires an GitHub App with your desired access level, and an CircleCI API Token which has access to the desired project(s).
