@@ -443,3 +443,4 @@ MigrationBackup/
 
 # End of https://www.gitignore.io/api/node,visualstudio
 *.key
+junit.xml
