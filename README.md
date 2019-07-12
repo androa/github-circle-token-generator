@@ -16,10 +16,10 @@ Necessary environment variables that need to be set to run it:
 ## Running Locally
 
 ```sh
-$ git clone https://github.com/androa/github-circle-token-generator
-$ cd github-circle-token-generator
-$ npm install
-$ npm start
+git clone https://github.com/androa/github-circle-token-generator
+cd github-circle-token-generator
+npm install
+npm start
 ```
 
 The app should now be running on [localhost:3000](http://localhost:3000/).
